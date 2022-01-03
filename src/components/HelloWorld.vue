@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div :class="$style.hello">
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -12,7 +12,7 @@
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
     </ul>
     <h3>Essential Links</h3>
-    <ul>
+    <ul :class="$style.ul">
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
       <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
@@ -40,12 +40,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style module>
 h3 {
   margin: 40px 0 0;
 }
-ul {
-  list-style-type: none;
+.ul {
+  /* list-style-type: none; */
   padding: 0;
 }
 li {
